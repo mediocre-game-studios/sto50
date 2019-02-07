@@ -6,6 +6,7 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
+    "preinstall": "npm install @vue/cli-service",
     "postinstall": "yarn build"
   },
   "dependencies": {
