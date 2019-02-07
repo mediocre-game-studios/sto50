@@ -701,7 +701,7 @@
     eslint-loader "^2.0.0"
     eslint-plugin-vue "^4.5.0"
 
-"@vue/cli-service@^3.4.0":
+"@vue/cli-service@^3.0.0":
   version "3.4.0"
   resolved "https://registry.yarnpkg.com/@vue/cli-service/-/cli-service-3.4.0.tgz#d2160ee4cf9de8dc4e9d780ccd61cc15862f2950"
   integrity sha512-AtLiin5Jlw0ULKXJtBhUaykz0VzDgYq2RCf7nxfB7Vsi5fTbJyOVeWYe9KsnsM6VTRBWRUI8NzPPMYxV2uxtQA==
