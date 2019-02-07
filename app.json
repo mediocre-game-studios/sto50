@@ -11,10 +11,9 @@
      },
      "engines": {
         "yarn": "1.4.0",
-        "npm": "6.2.0"
+        "npm": "6.1.0"
      },
     "addons": [
-
      ],
      "buildpacks": [
        {
