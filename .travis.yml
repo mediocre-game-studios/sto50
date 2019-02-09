@@ -15,7 +15,6 @@ env:
 install:
   - python -m pip install pipenv
   - pipenv install --dev
-  - pipenv shell
 
 before_script:
   - python manage.py makemigrations
