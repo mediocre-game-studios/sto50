@@ -13,7 +13,7 @@ env:
     - DJANGO_SETTINGS_MODULE="backend.settings.dev"
 
 install:
-  - python -m pip install --user --upgrade pipenv
+  - python -m pip install pipenv
   - pipenv install --dev
   - pipenv shell
 
