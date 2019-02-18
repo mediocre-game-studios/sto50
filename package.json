@@ -1,16 +1,24 @@
 {
     "name": "sto50",
     "version": "0.1.0",
+    "license": "MIT",
+    "keywords": ["django", "vue"],
+    "description": "",
+    "homepage": "https://sto50.herokuapp.com",
+    "repository": "github:mediocre-game-studios/sto50",
+    "bugs": "https://github.com/mediocre-game-studios/sto50/issues",
+    "author": "Artur Tamborski <tamborskiartur@gmail.com> (https://arturtamborski.pl)",
+    "contributors": [],
+
+
     "private": true,
+    "files": [ "backend/" ],
+    "main": "backend/main.js",
     "scripts": {
         "serve": "vue-cli-service serve",
         "build": "vue-cli-service build",
         "lint": "vue-cli-service lint",
         "postinstall": "yarn build"
-    },
-    "engines": {
-        "node": "11.9.0",
-        "yarn": "1.13.0"
     },
     "dependencies": {
         "axios": "^0.18.0",
@@ -22,14 +30,30 @@
         "@vue/cli-service": "^3.4.0",
         "@vue/cli-plugin-babel": "^3.4.0",
         "@vue/cli-plugin-eslint": "^3.4.0",
-        "vue-template-compiler": "^2.6.4"
+        "vue-template-compiler": "^2.6.4",
+        "vue-cli-plugin-source-dir": "^0.1.0"
     },
-    "devDependencies": {
+    "devDependencies": {},
+    "engines": {
+        "node": "11.9.0",
+        "yarn": "1.13.0",
+        "npm": "6.5.0"
     },
+
+
+    "env": {
+        "DJANGO_SETTINGS_MODULE": {
+            "description": "Set Django Settings to Production",
+            "value": "backend.settings.prod"
+        }
+    },
+    "addons": [],
+    "buildpacks": [
+        { "url": "heroku/nodejs" },
+        { "url": "heroku/python" }
+    ],
     "babel": {
-        "presets": [
-            "@vue/app"
-        ]
+        "presets": [ "@vue/app" ]
     },
     "eslintConfig": {
         "root": true,

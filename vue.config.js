@@ -1,6 +1,7 @@
 // const IS_PRODUCTION = process.env.NODE_ENV === 'production'
 
 module.exports = {
+    lintOnSave: true,
     outputDir: 'dist',
     assetsDir: 'static',
     // baseUrl: IS_PRODUCTION
@@ -10,6 +11,9 @@ module.exports = {
     // And set the CDN origin to `yourdomain.com/static`
     // Whitenoise will serve once to CDN which will then cache
     // and distribute
+    pluginOptions: {
+        sourceDir: "frontend"
+    },
     devServer: {
       proxy: {
         '/api*': {
