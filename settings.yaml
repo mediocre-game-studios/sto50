@@ -1,0 +1,40 @@
+name: sto50
+debug: no
+
+secret-key: debugvalue
+
+internal-ips:
+  - localhost
+
+allowed-hosts:
+  - localhost
+  - sto50.herokuapp.com
+
+db:
+  host: localhost
+  port: 5432
+  user: asd
+  pass: asd
+  name: sto50-db
+  backend: django.db.backends.sqlite3
+
+cache:
+  host: localhost
+  port: 11211
+  ttl: 900
+  timeout: 900
+  backend: django.core.cache.backends.dummy.DummyCache
+
+email:
+  host: localhost
+  port: 1234
+  user: asd
+  pass: asd
+  timeout: 900
+  backend: django.core.mail.backends.console.EmailBackend
+
+  file-path: mail
+  use-tls: yes
+  use-ssl: yes
+  ssl-key: /dev/null
+  ssl-cert: /dev/null
